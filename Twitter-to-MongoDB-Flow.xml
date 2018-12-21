@@ -214,6 +214,56 @@
                     <zIndex>0</zIndex>
                 </connections>
                 <connections>
+                    <id>a047afde-e0bd-3f67-0000-000000000000</id>
+                    <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>3c24bb7e-4f66-353a-0000-000000000000</groupId>
+                        <id>98b754ea-4d17-3a41-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>unmatched</selectedRelationships>
+                    <source>
+                        <groupId>3c24bb7e-4f66-353a-0000-000000000000</groupId>
+                        <id>9940efc5-940c-3b54-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>e1a76788-ed14-3186-0000-000000000000</id>
+                    <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>3c24bb7e-4f66-353a-0000-000000000000</groupId>
+                        <id>06d0e840-968f-3eff-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>unmatched</selectedRelationships>
+                    <source>
+                        <groupId>3c24bb7e-4f66-353a-0000-000000000000</groupId>
+                        <id>d69124d5-7c2f-374a-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
                     <id>ef9d1c74-5f34-3f8f-0000-000000000000</id>
                     <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
                     <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
@@ -267,8 +317,8 @@
                     <id>06d0e840-968f-3eff-0000-000000000000</id>
                     <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
                     <position>
-                        <x>2633.732690429688</x>
-                        <y>-127.00337905883771</y>
+                        <x>3032.345971679688</x>
+                        <y>505.5220344543459</y>
                     </position>
                     <bundle>
                         <artifact>nifi-mongodb-nar</artifact>
@@ -370,15 +420,15 @@
                             </entry>
                             <entry>
 <key>Mongo URI</key>
-<value>mongodb://43.240.96.158:27017/Twitter_Aus</value>
+<value>mongodb://43.240.96.158:27017/Twitter</value>
                             </entry>
                             <entry>
 <key>Mongo Database Name</key>
-<value>Twitter_Aus</value>
+<value>Twitter</value>
                             </entry>
                             <entry>
 <key>Mongo Collection Name</key>
-<value>twitter_australia</value>
+<value>twitter-australia</value>
                             </entry>
                             <entry>
 <key>ssl-context-service</key>
@@ -437,8 +487,8 @@
                     <id>12566a05-a31f-31f5-0000-000000000000</id>
                     <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
                     <position>
-                        <x>2631.441760457872</x>
-                        <y>92.7822358452363</y>
+                        <x>3037.340442098497</x>
+                        <y>773.4429871880097</y>
                     </position>
                     <bundle>
                         <artifact>nifi-standard-nar</artifact>
@@ -547,8 +597,8 @@
                     <id>229a31b4-c59f-354d-0000-000000000000</id>
                     <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
                     <position>
-                        <x>2009.6144475971582</x>
-                        <y>758.2693652961602</y>
+                        <x>1680.2122259174707</x>
+                        <y>335.19819830397273</y>
                     </position>
                     <bundle>
                         <artifact>nifi-standard-nar</artifact>
@@ -628,8 +678,8 @@
                     <id>289da0fd-e113-3e26-0000-000000000000</id>
                     <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
                     <position>
-                        <x>2006.0046691894531</x>
-                        <y>-344.6955828666687</y>
+                        <x>992.8193664550781</x>
+                        <y>334.4038281440735</y>
                     </position>
                     <bundle>
                         <artifact>nifi-social-media-nar</artifact>
@@ -751,8 +801,8 @@
                     <id>49dd223f-b252-3793-0000-000000000000</id>
                     <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
                     <position>
-                        <x>2635.8612767840054</x>
-                        <y>530.8760102923087</y>
+                        <x>2325.1930638933804</x>
+                        <y>548.0486177141837</y>
                     </position>
                     <bundle>
                         <artifact>nifi-update-attribute-nar</artifact>
@@ -867,8 +917,8 @@
                     <id>84aaea0b-4da1-3c8d-0000-000000000000</id>
                     <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
                     <position>
-                        <x>1996.0412084246304</x>
-                        <y>95.1099198992423</y>
+                        <x>1003.1507054949429</x>
+                        <y>775.770488136547</y>
                     </position>
                     <bundle>
                         <artifact>nifi-update-attribute-nar</artifact>
@@ -914,18 +964,6 @@
 <key>clause2</key>
 <value>
     <name>clause2</name>
-</value>
-                            </entry>
-                            <entry>
-<key>clause3</key>
-<value>
-    <name>clause3</name>
-</value>
-                            </entry>
-                            <entry>
-<key>clause4</key>
-<value>
-    <name>clause4</name>
 </value>
                             </entry>
                             <entry>
@@ -986,14 +1024,6 @@
 <value>${location:toLower():contains("sydney")}</value>
                             </entry>
                             <entry>
-<key>clause3</key>
-<value>${location:toLower():contains("au")}</value>
-                            </entry>
-                            <entry>
-<key>clause4</key>
-<value>${location:toLower():contains("aus")}</value>
-                            </entry>
-                            <entry>
 <key>clause5</key>
 <value>${location:toLower():contains("brisbane")}</value>
                             </entry>
@@ -1030,11 +1060,181 @@
                     <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
                 </processors>
                 <processors>
+                    <id>98b754ea-4d17-3a41-0000-000000000000</id>
+                    <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1694.4630371093754</x>
+                        <y>1026.9670646667482</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-mongodb-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.8.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>mongo-client-service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.mongodb.MongoDBClientService</identifiesControllerService>
+    <name>mongo-client-service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Mongo URI</key>
+<value>
+    <name>Mongo URI</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Mongo Database Name</key>
+<value>
+    <name>Mongo Database Name</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Mongo Collection Name</key>
+<value>
+    <name>Mongo Collection Name</name>
+</value>
+                            </entry>
+                            <entry>
+<key>ssl-context-service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+    <name>ssl-context-service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>ssl-client-auth</key>
+<value>
+    <name>ssl-client-auth</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Mode</key>
+<value>
+    <name>Mode</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Upsert</key>
+<value>
+    <name>Upsert</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Update Query Key</key>
+<value>
+    <name>Update Query Key</name>
+</value>
+                            </entry>
+                            <entry>
+<key>putmongo-update-query</key>
+<value>
+    <name>putmongo-update-query</name>
+</value>
+                            </entry>
+                            <entry>
+<key>put-mongo-update-mode</key>
+<value>
+    <name>put-mongo-update-mode</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Write Concern</key>
+<value>
+    <name>Write Concern</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Character Set</key>
+<value>
+    <name>Character Set</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>mongo-client-service</key>
+                            </entry>
+                            <entry>
+<key>Mongo URI</key>
+<value>mongodb://43.240.96.158:27017/Twitter</value>
+                            </entry>
+                            <entry>
+<key>Mongo Database Name</key>
+<value>Twitter</value>
+                            </entry>
+                            <entry>
+<key>Mongo Collection Name</key>
+<value>twitter-other</value>
+                            </entry>
+                            <entry>
+<key>ssl-context-service</key>
+                            </entry>
+                            <entry>
+<key>ssl-client-auth</key>
+<value>REQUIRED</value>
+                            </entry>
+                            <entry>
+<key>Mode</key>
+<value>insert</value>
+                            </entry>
+                            <entry>
+<key>Upsert</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Update Query Key</key>
+                            </entry>
+                            <entry>
+<key>putmongo-update-query</key>
+                            </entry>
+                            <entry>
+<key>put-mongo-update-mode</key>
+<value>doc</value>
+                            </entry>
+                            <entry>
+<key>Write Concern</key>
+<value>ACKNOWLEDGED</value>
+                            </entry>
+                            <entry>
+<key>Character Set</key>
+<value>UTF-8</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>PutMongo</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.mongodb.PutMongo</type>
+                </processors>
+                <processors>
                     <id>9940efc5-940c-3b54-0000-000000000000</id>
                     <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
                     <position>
-                        <x>1997.9154884174868</x>
-                        <y>335.68692719889384</y>
+                        <x>1688.8081886127993</x>
+                        <y>766.5638498063157</y>
                     </position>
                     <bundle>
                         <artifact>nifi-standard-nar</artifact>
@@ -1069,7 +1269,7 @@
                             </entry>
                             <entry>
 <key>tweet_loc</key>
-<value>${clause1:or(${clause2}):or(${clause3}):or(${clause4}):or(${clause5}):or(${clause6}):or(${clause7}):or(${clause8}):or(${clause9}):or(${clause10})}</value>
+<value>${clause1:or(${clause2}):or(${clause5}):or(${clause6}):or(${clause7}):or(${clause8}):or(${clause9}):or(${clause10})}</value>
                             </entry>
                         </properties>
                         <runDurationMillis>0</runDurationMillis>
@@ -1084,7 +1284,7 @@
                         <name>tweet_loc</name>
                     </relationships>
                     <relationships>
-                        <autoTerminate>true</autoTerminate>
+                        <autoTerminate>false</autoTerminate>
                         <name>unmatched</name>
                     </relationships>
                     <state>RUNNING</state>
@@ -1095,8 +1295,8 @@
                     <id>c23243a6-b129-3b7b-0000-000000000000</id>
                     <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
                     <position>
-                        <x>2638.675382854202</x>
-                        <y>751.48307400209</y>
+                        <x>2313.956388713577</x>
+                        <y>339.3398855255275</y>
                     </position>
                     <bundle>
                         <artifact>nifi-standard-nar</artifact>
@@ -1191,8 +1391,8 @@
                     <id>c3fcb5d4-863b-357a-0000-000000000000</id>
                     <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
                     <position>
-                        <x>2003.3699629323269</x>
-                        <y>538.8629949615627</y>
+                        <x>1683.3344404713894</x>
+                        <y>549.7910345123439</y>
                     </position>
                     <bundle>
                         <artifact>nifi-standard-nar</artifact>
@@ -1287,8 +1487,8 @@
                     <id>d69124d5-7c2f-374a-0000-000000000000</id>
                     <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
                     <position>
-                        <x>2633.7350074604556</x>
-                        <y>325.6406358475755</y>
+                        <x>2330.8722144917056</x>
+                        <y>770.5679429764817</y>
                     </position>
                     <bundle>
                         <artifact>nifi-standard-nar</artifact>
@@ -1338,7 +1538,7 @@
                         <name>tweet_keyword</name>
                     </relationships>
                     <relationships>
-                        <autoTerminate>true</autoTerminate>
+                        <autoTerminate>false</autoTerminate>
                         <name>unmatched</name>
                     </relationships>
                     <state>RUNNING</state>
@@ -1349,8 +1549,8 @@
                     <id>e0c432d0-51a1-3df3-0000-000000000000</id>
                     <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
                     <position>
-                        <x>1993.1802656667019</x>
-                        <y>-114.75371188658187</y>
+                        <x>1000.2898848073269</x>
+                        <y>564.3456991241603</y>
                     </position>
                     <bundle>
                         <artifact>nifi-standard-nar</artifact>
@@ -1446,5 +1646,5 @@
             <variables/>
         </processGroups>
     </snippet>
-    <timestamp>12/21/2018 03:37:04 UTC</timestamp>
+    <timestamp>12/21/2018 04:57:45 UTC</timestamp>
 </template>
