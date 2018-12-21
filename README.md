@@ -1,2 +1,2 @@
-# nifi-templates
-NiFi templates and supporting files
+# NiFi Templates
+NiFi Templates and supporting files
