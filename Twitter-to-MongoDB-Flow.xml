@@ -2,7 +2,7 @@
 <template encoding-version="1.2">
     <description></description>
     <groupId>c73163b7-0166-1000-a657-9d4cf1bd6953</groupId>
-    <name>Twitter_to_MongoDB_Flow</name>
+    <name>Twitter-to-MongoDB-Flow</name>
     <snippet>
         <processGroups>
             <id>3c24bb7e-4f66-353a-0000-000000000000</id>
@@ -429,7 +429,7 @@
                         <autoTerminate>true</autoTerminate>
                         <name>success</name>
                     </relationships>
-                    <state>STOPPED</state>
+                    <state>RUNNING</state>
                     <style/>
                     <type>org.apache.nifi.processors.mongodb.PutMongo</type>
                 </processors>
@@ -539,7 +539,7 @@
                         <autoTerminate>false</autoTerminate>
                         <name>success</name>
                     </relationships>
-                    <state>STOPPED</state>
+                    <state>RUNNING</state>
                     <style/>
                     <type>org.apache.nifi.processors.standard.JoltTransformJSON</type>
                 </processors>
@@ -591,7 +591,7 @@
                         <properties>
                             <entry>
 <key>Dictionary File</key>
-<value>/Users/apple/Desktop/loc/loc.txt</value>
+<value>/mnt/code/nifi-templates/supporting-files/filter-out-locations.csv</value>
                             </entry>
                             <entry>
 <key>Attribute Pattern</key>
@@ -613,14 +613,14 @@
                     <executionNodeRestricted>false</executionNodeRestricted>
                     <name>ScanAttribute</name>
                     <relationships>
-                        <autoTerminate>false</autoTerminate>
+                        <autoTerminate>true</autoTerminate>
                         <name>matched</name>
                     </relationships>
                     <relationships>
                         <autoTerminate>false</autoTerminate>
                         <name>unmatched</name>
                     </relationships>
-                    <state>STOPPED</state>
+                    <state>RUNNING</state>
                     <style/>
                     <type>org.apache.nifi.processors.standard.ScanAttribute</type>
                 </processors>
@@ -743,7 +743,7 @@
                         <autoTerminate>false</autoTerminate>
                         <name>success</name>
                     </relationships>
-                    <state>STOPPED</state>
+                    <state>RUNNING</state>
                     <style/>
                     <type>org.apache.nifi.processors.twitter.GetTwitter</type>
                 </processors>
@@ -859,7 +859,7 @@
                         <autoTerminate>false</autoTerminate>
                         <name>success</name>
                     </relationships>
-                    <state>STOPPED</state>
+                    <state>RUNNING</state>
                     <style/>
                     <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
                 </processors>
@@ -1025,7 +1025,7 @@
                         <autoTerminate>false</autoTerminate>
                         <name>success</name>
                     </relationships>
-                    <state>STOPPED</state>
+                    <state>RUNNING</state>
                     <style/>
                     <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
                 </processors>
@@ -1087,7 +1087,7 @@
                         <autoTerminate>true</autoTerminate>
                         <name>unmatched</name>
                     </relationships>
-                    <state>STOPPED</state>
+                    <state>RUNNING</state>
                     <style/>
                     <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
                 </processors>
@@ -1183,7 +1183,7 @@
                         <autoTerminate>true</autoTerminate>
                         <name>unmatched</name>
                     </relationships>
-                    <state>STOPPED</state>
+                    <state>RUNNING</state>
                     <style/>
                     <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
                 </processors>
@@ -1279,7 +1279,7 @@
                         <autoTerminate>true</autoTerminate>
                         <name>unmatched</name>
                     </relationships>
-                    <state>STOPPED</state>
+                    <state>RUNNING</state>
                     <style/>
                     <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
                 </processors>
@@ -1341,7 +1341,7 @@
                         <autoTerminate>true</autoTerminate>
                         <name>unmatched</name>
                     </relationships>
-                    <state>STOPPED</state>
+                    <state>RUNNING</state>
                     <style/>
                     <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
                 </processors>
@@ -1437,7 +1437,7 @@
                         <autoTerminate>true</autoTerminate>
                         <name>unmatched</name>
                     </relationships>
-                    <state>STOPPED</state>
+                    <state>RUNNING</state>
                     <style/>
                     <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
                 </processors>
@@ -1446,5 +1446,5 @@
             <variables/>
         </processGroups>
     </snippet>
-    <timestamp>12/21/2018 03:10:52 UTC</timestamp>
+    <timestamp>12/21/2018 03:37:04 UTC</timestamp>
 </template>
