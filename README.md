@@ -1,5 +1,2 @@
 # NiFi Templates
-NiFi Templates and supporting files
-
-## Notes:
-reddit.xml is obsolete 
+NiFi Templates and supporting file
