@@ -801,7 +801,7 @@
                             </entry>
                             <entry>
 <key>Mongo Collection Name</key>
-<value>family-violence</value>
+<value>reddit</value>
                             </entry>
                             <entry>
 <key>ssl-context-service</key>
@@ -1234,9 +1234,9 @@
                     <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
                 </processors>
             </contents>
-            <name>1</name>
+            <name>Reddit Stream</name>
             <variables/>
         </processGroups>
     </snippet>
-    <timestamp>01/11/2019 15:53:32 AEDT</timestamp>
+    <timestamp>01/11/2019 17:35:38 AEDT</timestamp>
 </template>
