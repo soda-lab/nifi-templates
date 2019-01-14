@@ -2,7 +2,7 @@
 <template encoding-version="1.2">
     <description></description>
     <groupId>c73163b7-0166-1000-a657-9d4cf1bd6953</groupId>
-    <name>Twitter to Mongo</name>
+    <name>Twitter-to-MongoDB-Flow</name>
     <snippet>
         <processGroups>
             <id>3c24bb7e-4f66-353a-0000-000000000000</id>
@@ -504,7 +504,7 @@
                         <autoTerminate>true</autoTerminate>
                         <name>success</name>
                     </relationships>
-                    <state>RUNNING</state>
+                    <state>STOPPED</state>
                     <style/>
                     <type>org.apache.nifi.processors.mongodb.PutMongo</type>
                 </processors>
@@ -614,7 +614,7 @@
                         <autoTerminate>false</autoTerminate>
                         <name>success</name>
                     </relationships>
-                    <state>RUNNING</state>
+                    <state>STOPPED</state>
                     <style/>
                     <type>org.apache.nifi.processors.standard.JoltTransformJSON</type>
                 </processors>
@@ -695,7 +695,7 @@
                         <autoTerminate>false</autoTerminate>
                         <name>unmatched</name>
                     </relationships>
-                    <state>RUNNING</state>
+                    <state>STOPPED</state>
                     <style/>
                     <type>org.apache.nifi.processors.standard.ScanAttribute</type>
                 </processors>
@@ -818,7 +818,7 @@
                         <autoTerminate>false</autoTerminate>
                         <name>success</name>
                     </relationships>
-                    <state>RUNNING</state>
+                    <state>STOPPED</state>
                     <style/>
                     <type>org.apache.nifi.processors.twitter.GetTwitter</type>
                 </processors>
@@ -934,7 +934,7 @@
                         <autoTerminate>false</autoTerminate>
                         <name>success</name>
                     </relationships>
-                    <state>RUNNING</state>
+                    <state>STOPPED</state>
                     <style/>
                     <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
                 </processors>
@@ -1016,8 +1016,9 @@
 },{
        "operation": "default",
       "spec": {
-      "soda_created_utc": ${now():toNumber():divide(1000)}
-    }
+      "soda_created_utc": ${now():toNumber():divide(1000)},
+      "soda_source": "twitter_streaming_api_sample_endpoint"
+      }
   }]</value>
                             </entry>
                             <entry>
@@ -1044,7 +1045,7 @@
                         <autoTerminate>false</autoTerminate>
                         <name>success</name>
                     </relationships>
-                    <state>RUNNING</state>
+                    <state>STOPPED</state>
                     <style/>
                     <type>org.apache.nifi.processors.standard.JoltTransformJSON</type>
                 </processors>
@@ -1190,7 +1191,7 @@
                         <autoTerminate>false</autoTerminate>
                         <name>success</name>
                     </relationships>
-                    <state>RUNNING</state>
+                    <state>STOPPED</state>
                     <style/>
                     <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
                 </processors>
@@ -1360,7 +1361,7 @@
                         <autoTerminate>true</autoTerminate>
                         <name>success</name>
                     </relationships>
-                    <state>RUNNING</state>
+                    <state>STOPPED</state>
                     <style/>
                     <type>org.apache.nifi.processors.mongodb.PutMongo</type>
                 </processors>
@@ -1422,7 +1423,7 @@
                         <autoTerminate>false</autoTerminate>
                         <name>unmatched</name>
                     </relationships>
-                    <state>RUNNING</state>
+                    <state>STOPPED</state>
                     <style/>
                     <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
                 </processors>
@@ -1518,7 +1519,7 @@
                         <autoTerminate>true</autoTerminate>
                         <name>unmatched</name>
                     </relationships>
-                    <state>RUNNING</state>
+                    <state>STOPPED</state>
                     <style/>
                     <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
                 </processors>
@@ -1614,7 +1615,7 @@
                         <autoTerminate>true</autoTerminate>
                         <name>unmatched</name>
                     </relationships>
-                    <state>RUNNING</state>
+                    <state>STOPPED</state>
                     <style/>
                     <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
                 </processors>
@@ -1676,7 +1677,7 @@
                         <autoTerminate>false</autoTerminate>
                         <name>unmatched</name>
                     </relationships>
-                    <state>RUNNING</state>
+                    <state>STOPPED</state>
                     <style/>
                     <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
                 </processors>
@@ -1772,7 +1773,7 @@
                         <autoTerminate>true</autoTerminate>
                         <name>unmatched</name>
                     </relationships>
-                    <state>RUNNING</state>
+                    <state>STOPPED</state>
                     <style/>
                     <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
                 </processors>
@@ -1781,5 +1782,5 @@
             <variables/>
         </processGroups>
     </snippet>
-    <timestamp>01/04/2019 04:13:23 UTC</timestamp>
+    <timestamp>01/14/2019 06:44:57 UTC</timestamp>
 </template>
