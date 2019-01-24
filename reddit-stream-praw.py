@@ -1,6 +1,6 @@
 import praw
-from pymongo import MongoClient
 import sys
+import json
 
 client_id = sys.argv[1]
 client_secret = sys.argv[2]
@@ -16,29 +16,10 @@ reddit = praw.Reddit(client_id=client_id,
 
 subreddits = reddit.subreddit('all')
 
-client = MongoClient('localhost', 27017)
-db = client['reddit']
-col = db['reddit']
-
-count = 0
 for submission in subreddits.stream.submissions():
     try:
         if submission.selftext == '' and submission.title == '':
             continue
-        dict = {
-            'subreddit': submission.subreddit.display_name,
-            'selftext': submission.selftext,
-            'author_fullname': submission.author_fullname,
-            'title': submission.title,
-            'name': submission.name,
-            'created': submission.created,
-            'subreddit_id': submission.subreddit_id,
-            'id': submission.id,
-            'permalink': submission.permalink,
-            'url': submission.url,
-            'created_utc': submission.created_utc,
-            'soda_source': 'praw_streaming'
-        }
-        col.insert_one(dict)
+        json.dumps({'abc': 123, 'fcs': 'sdc'})
     except praw.exceptions.PRAWException as e:
         pass
