@@ -314,6 +314,56 @@
                     <zIndex>0</zIndex>
                 </connections>
                 <connections>
+                    <id>c29a8925-2c44-3e59-0000-000000000000</id>
+                    <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>3c24bb7e-4f66-353a-0000-000000000000</groupId>
+                        <id>ea415d4e-b712-377e-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>matched</selectedRelationships>
+                    <source>
+                        <groupId>3c24bb7e-4f66-353a-0000-000000000000</groupId>
+                        <id>9f0145c8-ab17-3658-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>d5b58e25-d7dc-3e1e-0000-000000000000</id>
+                    <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>3c24bb7e-4f66-353a-0000-000000000000</groupId>
+                        <id>4d02b179-b866-3de0-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>undeleted_tweets</selectedRelationships>
+                    <source>
+                        <groupId>3c24bb7e-4f66-353a-0000-000000000000</groupId>
+                        <id>ea415d4e-b712-377e-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
                     <id>e1a76788-ed14-3186-0000-000000000000</id>
                     <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
                     <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
@@ -395,7 +445,7 @@
                     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
                     <destination>
                         <groupId>3c24bb7e-4f66-353a-0000-000000000000</groupId>
-                        <id>4d02b179-b866-3de0-0000-000000000000</id>
+                        <id>9f0145c8-ab17-3658-0000-000000000000</id>
                         <type>PROCESSOR</type>
                     </destination>
                     <flowFileExpiration>0 sec</flowFileExpiration>
@@ -803,8 +853,8 @@
                     <id>289da0fd-e113-3e26-0000-000000000000</id>
                     <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
                     <position>
-                        <x>1005.1090393066406</x>
-                        <y>26.535099506378174</y>
+                        <x>382.3753356933594</x>
+                        <y>786.6193737983704</y>
                     </position>
                     <bundle>
                         <artifact>nifi-social-media-nar</artifact>
@@ -1720,6 +1770,102 @@
                     <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
                 </processors>
                 <processors>
+                    <id>9f0145c8-ab17-3658-0000-000000000000</id>
+                    <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>379.9168989674831</x>
+                        <y>567.1659277008205</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.8.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Destination</key>
+<value>
+    <name>Destination</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Return Type</key>
+<value>
+    <name>Return Type</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Path Not Found Behavior</key>
+<value>
+    <name>Path Not Found Behavior</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Null Value Representation</key>
+<value>
+    <name>Null Value Representation</name>
+</value>
+                            </entry>
+                            <entry>
+<key>delete</key>
+<value>
+    <name>delete</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Destination</key>
+<value>flowfile-attribute</value>
+                            </entry>
+                            <entry>
+<key>Return Type</key>
+<value>json</value>
+                            </entry>
+                            <entry>
+<key>Path Not Found Behavior</key>
+<value>ignore</value>
+                            </entry>
+                            <entry>
+<key>Null Value Representation</key>
+<value>empty string</value>
+                            </entry>
+                            <entry>
+<key>delete</key>
+<value>$.delete</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>Get Delete</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>matched</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>unmatched</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
+                </processors>
+                <processors>
                     <id>be722e09-b339-3442-0000-000000000000</id>
                     <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
                     <position>
@@ -2053,8 +2199,8 @@
                     <id>e0c432d0-51a1-3df3-0000-000000000000</id>
                     <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
                     <position>
-                        <x>1000.2898848073269</x>
-                        <y>564.3456991241603</y>
+                        <x>1013.1779463307644</x>
+                        <y>548.5935628936916</y>
                     </position>
                     <bundle>
                         <artifact>nifi-standard-nar</artifact>
@@ -2221,10 +2367,72 @@
                     <style/>
                     <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
                 </processors>
+                <processors>
+                    <id>ea415d4e-b712-377e-0000-000000000000</id>
+                    <parentGroupId>3c24bb7e-4f66-353a-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>388.13426867156727</x>
+                        <y>305.66782662372657</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.8.0</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Routing Strategy</key>
+<value>
+    <name>Routing Strategy</name>
+</value>
+                            </entry>
+                            <entry>
+<key>undeleted_tweets</key>
+<value>
+    <name>undeleted_tweets</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Routing Strategy</key>
+<value>Route to Property name</value>
+                            </entry>
+                            <entry>
+<key>undeleted_tweets</key>
+<value>${delete:isEmpty()}</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>Filter Out Deleted tweets</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>undeleted_tweets</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>unmatched</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
+                </processors>
             </contents>
             <name>Twitter to MongoDB Flow</name>
             <variables/>
         </processGroups>
     </snippet>
-    <timestamp>02/25/2019 00:22:12 UTC</timestamp>
+    <timestamp>02/25/2019 03:28:24 UTC</timestamp>
 </template>
